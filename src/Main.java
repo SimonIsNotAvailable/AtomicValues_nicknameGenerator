@@ -68,7 +68,7 @@ public class Main {
     }
 
     public static boolean findPalindrome(String text) {
-        if (text.split("").length > 0) {
+        if (!findSingleLetter(text)) {
             return text.equals(new StringBuilder(text).reverse().toString());
         }
         return false;
