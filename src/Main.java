@@ -54,8 +54,6 @@ public class Main {
         System.out.println("Красивых слов с длиной 3: " + threeChars );
         System.out.println("Красивых слов с длиной 4: " + fourChars );
         System.out.println("Красивых слов с длиной 5: " + fiveChars );
-
-
     }
 
     public static String generateText(String letters, int length) {
