@@ -11,7 +11,6 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
 
-
         Random random = new Random();
         String[] texts = new String[100_000];
         for (int i = 0; i < texts.length; i++) {
@@ -26,8 +25,6 @@ public class Main {
             }
         });
         secondThread.start();
-
-
 
        Thread firstThread =  new Thread(() -> {
             for (String text : texts) {
@@ -90,12 +87,13 @@ public class Main {
         switch (n) {
             case 3:
                 threeChars.getAndIncrement();
-
+                break;
             case 4:
                 fourChars.getAndIncrement();
-
+                break;
             case 5:
                 fiveChars.getAndIncrement();
+                break;
         }
     }
 }
