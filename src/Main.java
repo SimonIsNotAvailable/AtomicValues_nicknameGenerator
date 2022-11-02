@@ -80,7 +80,10 @@ public class Main {
     public static boolean findSorted(String text) {
         String[] chars = text.split("");
         Arrays.sort(chars);
-        return Arrays.equals(text.split(""), chars);
+        if (!findSingleLetter(text)){
+            return Arrays.equals(text.split(""), chars);
+        }
+        return false;
     }
 
     public static void setCharsCounter(int n) {
